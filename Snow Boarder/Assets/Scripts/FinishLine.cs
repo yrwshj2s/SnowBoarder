@@ -22,7 +22,9 @@ public class FinishLine : MonoBehaviour
         {
             finishEffect.Play();
             Debug.Log("winner");
+            GetComponent<AudioSource>().Play();
             Invoke("restartLevel", delay);
+            
         }
     }
 
